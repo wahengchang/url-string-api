@@ -27,18 +27,12 @@ stringAPI.removeSpace = function(str){
 
 
 stringAPI.removeFileExtension = function(str) {
-    console.log("   removeFileExtension")
 
     return str.substr(0, str.lastIndexOf('.')) 
 }
 
 stringAPI.getFileExtension = function(str) {
     return str.substr(str.lastIndexOf('.'),str.length) 
-}
-
-stringAPI.singleToArray = function(str) {
-
-  	return (str) ? _.flatten([str]) : undefined;
 }
 
 
