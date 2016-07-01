@@ -13,7 +13,7 @@ stringAPI.urlFileName = function(url) {
     return url.split('/').pop()
 }
 
-stringAPI.urlPath = function(url) {
+stringAPI.urlGetPath = function(url) {
     return url.substring(0, url.lastIndexOf("/"));
 }
 
@@ -87,7 +87,7 @@ stringAPI.valiFileName = function(fileName) {
   var tFileName = stringAPI.urlFileName(fileName)
 
   if(stringAPI.removeFileExtension(tFileName).length <= 0){
-    var tUrlPath = stringAPI.urlPath(fileName)
+    var tUrlPath = stringAPI.urlGetPath(fileName)
     var extension = stringAPI.getFileExtension(fileName)
     fileName = tUrlPath+"/"+stringAPI.timestamp()+extension
   }
