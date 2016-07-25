@@ -29,6 +29,8 @@ stringTOOL.stringFilter("abc._@^&#%$&")  // return abc._
 stringTOOL.onlyCharNum("abc@^&#%$&")  //return abc
 stringTOOL.valiFileName("/path/to/file.jpg")  //return /path/to/14234324.jpg
 
+stringTOOL.isHTTPS("http://abc.jpg")  //return false
+
 ```
 
 

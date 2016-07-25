@@ -25,6 +25,15 @@ stringAPI.removeSpace = function(str){
     return str.replace(/ /g,'')
 }
 
+stringAPI.isHTTPS = function(URL){
+   if (URL.indexOf('https://') === -1) {
+      return false
+   }
+   else{
+    return true
+   }
+}
+
 
 stringAPI.removeFileExtension = function(str) {
 
