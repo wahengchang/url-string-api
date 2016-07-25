@@ -1,6 +1,6 @@
 {
   "name": "url-string-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A parsing url and file purpose tool",
   "main": "index.js",
   "scripts": {
