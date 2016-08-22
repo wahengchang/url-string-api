@@ -52,6 +52,9 @@ stringAPI.stringToArray = function(str){
   else if(str[0] == '"' || str[0] == "'"){
     return JSON.parse(JSON.parse(str))
   }
+  else{
+    return str
+  }
 }
 
 
