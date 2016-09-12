@@ -9,7 +9,6 @@
   "author": "Peter Chang <wahengchang@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "underscore": "^1.8.4"
   },
   "devDependencies": {},
   "repository": {
