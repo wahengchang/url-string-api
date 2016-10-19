@@ -103,5 +103,10 @@ stringAPI.valiFileName = function(fileName) {
   return fileName
 }
 
+// return [ 'pic.jpg','jpg']
+stringAPI.isImage = function(str) {
+  return str.match(/[^/]+(jpg|png|gif)$/)
+}
+
 
 module.exports = stringAPI

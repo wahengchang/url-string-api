@@ -28,4 +28,9 @@ describe('Test url-string-api module, ', function () {
     stringModule.urlGetPath(URL).should.be.eql('http://abc.def/ghi/jkl')
     done()
   })
+  it('isImage:', function (done) {
+    stringModule.isImage(URL)[0].should.be.eql('pic.jpg')
+    stringModule.isImage(URL)[1].should.be.eql('jpg')
+    done()
+  })
 })
